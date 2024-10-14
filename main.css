@@ -3,10 +3,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: sticky;
-  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent;
   top: 0;
   z-index:1;
+  transition: all 0.25s ease;
+}
+
+.header__scrolled {
+background-color: white;
+box-shadow: 0px 12px 34px -11px rgb(65, 62, 101, 0.1);
+
 }
 
 body {
@@ -59,6 +68,7 @@ button:hover {
   background-position: center;
   background-size: cover;
   position: relative;
+  padding-top: 200px;
 }
 
 .orb-canvas {
